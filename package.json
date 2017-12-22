@@ -4,6 +4,7 @@
   "description": "The Brooks app is a Christmas present for my mom, who is a big fan of David Brooks. It consolidates his New York Times columns. brooks-server is the server-side component of the app.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
