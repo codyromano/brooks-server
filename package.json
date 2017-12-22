@@ -1,0 +1,21 @@
+{
+  "name": "brooks-server",
+  "version": "1.0.0",
+  "description": "The Brooks app is a Christmas present for my mom, who is a big fan of David Brooks. It consolidates his New York Times columns. brooks-server is the server-side component of the app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codyromano/brooks-server.git"
+  },
+  "author": "Cody Romano",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "knex": "^0.14.2",
+    "mysql": "^2.15.0"
+  }
+}
