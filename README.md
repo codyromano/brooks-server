@@ -13,11 +13,16 @@ brew services start mysql
 ```
 git clone https://github.com/codyromano/brooks-server.git
 ```
-3) Using [Sequel Pro](https://www.sequelpro.com/) or another preferred MySQL client, login as a user who has `CREATE USER` privileges. Execute the setup SQL found in [/database/setup.sql](https://github.com/codyromano/brooks-server/blob/master/database/setup.sql). This does a few things:
+3) Using [Sequel Pro](https://www.sequelpro.com/) or another preferred MySQL client, login as a user who has `CREATE USER` privileges. Execute the following SQL statements:
+
+- [/database/setup.sql](https://github.com/codyromano/brooks-server/blob/master/database/setup.sql)
+- [/database/brooks.sql](https://github.com/codyromano/brooks-server/blob/master/database/brooks.sql)
+
+This does a few things:
 
 - Creates a `brooks` database
 - Creates a `brooksadmin` user
-- Creates an `articles` table
+- Creates and populates an `articles` table
 
 4) Run `npm start` to start the API server.
 
