@@ -9,9 +9,17 @@ brew update
 brew install mysql
 brew services start mysql
 ```
-2) Using [MySQL Pro](https://www.sequelpro.com/) or another preferred MySQL client, import `./database/setup.sql`. You must execute the SQL dump as a user who has `CREATE USER` privileges.
+2) Check out the project 
+```
+https://github.com/codyromano/brooks-server.git
+```
+3) Using [Sequel Pro](https://www.sequelpro.com/) or another preferred MySQL client, login as a user who has `CREATE USER` privileges. Execute the setup SQL found in [/database/setup.sql](https://github.com/codyromano/brooks-server/blob/master/database/setup.sql). This does a few things:
 
-3) Run `npm start` to start the API server.
+- Creates a `brooks` database
+- Creates a `brooksadmin` user
+- Creates an `articles` table
+
+4) Run `npm start` to start the API server.
 
 Try:
 
