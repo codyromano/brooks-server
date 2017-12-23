@@ -1,24 +1,11 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-
-const getSQLQueryResult = require('./database/getSQLQueryResult');
+const createServer = require('./createExpressServerWithConfiguration');
+const setupArticleByIdRoute = require('./routes/getArticleById');
+const setupTableOfContentsRoute = require('./routes/getTableOfContents');
 const config = require('./database/config');
 
-const app = express();
-app.use(bodyParser.json());
-
-app.get('/table-of-contents/', (req, res) => {
-  const sql = `SELECT id,title FROM articles`;
-
-  getSQLQueryResult(sql, result => res.send(result));
-});
-
-app.get('/article/id/:articleId', (req, res) => {
-  const articleId = parseInt(req.params.articleId);
-  const sql = `SELECT * FROM articles WHERE id=${articleId} LIMIT 1`;
-
-  getSQLQueryResult(sql, result => res.send(result));
-});
+const app = createServer();
+setupTableOfContentsRoute(app);
+setupArticleByIdRoute(app);
 
 app.listen(config.port, () => {
   console.log(`Server running on http://localhost:${config.port}`)
