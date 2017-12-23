@@ -3,12 +3,20 @@
 ## Get started
 
 1) Install MySQL dependencies
+
+**Mac**
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew install mysql
 brew services start mysql
 ```
+**Ubuntu**
+```
+sudo apt-get update
+sudo apt-get install mysql-server
+``
+
 2) Check out the project 
 ```
 git clone https://github.com/codyromano/brooks-server.git
