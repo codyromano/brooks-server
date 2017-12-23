@@ -15,7 +15,7 @@ brew services start mysql
 ```
 sudo apt-get update
 sudo apt-get install mysql-server
-``
+```
 
 2) Check out the project 
 ```
