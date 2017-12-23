@@ -21,24 +21,22 @@ sudo apt-get install mysql-server
 ```
 git clone https://github.com/codyromano/brooks-server.git
 ```
-3) Using [Sequel Pro](https://www.sequelpro.com/) or another preferred MySQL client, login as a user who has `CREATE USER` privileges. Execute the following SQL statements:
+3) Set up the MySQL server
+
+**Using a Desktop MySQL Client**
+
+Using [Sequel Pro](https://www.sequelpro.com/) or another preferred MySQL client, login as a user who has `CREATE USER` privileges. Import the following SQL dumps:
 
 - [/database/setup.sql](https://github.com/codyromano/brooks-server/blob/master/database/setup.sql)
 - [/database/brooks.sql](https://github.com/codyromano/brooks-server/blob/master/database/brooks.sql)
 
-With the `mysql` client installed, you can run:
+**Using the mysql CLI**
 
 ```
 cd brooks-server
 mysql -u root -p < database/setup.sql
 mysql -u root -p < database/brooks.sql
 ```
-
-This does a few things:
-
-- Creates a `brooks` database
-- Creates a `brooksadmin` user
-- Creates and populates an `articles` table
 
 4) Run `npm start` to start the API server.
 
