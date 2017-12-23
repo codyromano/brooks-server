@@ -26,6 +26,14 @@ git clone https://github.com/codyromano/brooks-server.git
 - [/database/setup.sql](https://github.com/codyromano/brooks-server/blob/master/database/setup.sql)
 - [/database/brooks.sql](https://github.com/codyromano/brooks-server/blob/master/database/brooks.sql)
 
+With the `mysql` client installed, you can run:
+
+```
+cd brooks-server
+mysql -u root -p < database/setup.sql
+mysql -u root -p < database/brooks.sql
+```
+
 This does a few things:
 
 - Creates a `brooks` database
