@@ -23,6 +23,8 @@
 # Dump of table articles
 # ------------------------------------------------------------
 
+USE `brooks`;
+
 DROP TABLE IF EXISTS `articles`;
 
 CREATE TABLE `articles` (
