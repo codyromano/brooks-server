@@ -11,7 +11,7 @@ brew services start mysql
 ```
 2) Check out the project 
 ```
-https://github.com/codyromano/brooks-server.git
+git clone https://github.com/codyromano/brooks-server.git
 ```
 3) Using [Sequel Pro](https://www.sequelpro.com/) or another preferred MySQL client, login as a user who has `CREATE USER` privileges. Execute the setup SQL found in [/database/setup.sql](https://github.com/codyromano/brooks-server/blob/master/database/setup.sql). This does a few things:
 
