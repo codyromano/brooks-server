@@ -1,5 +1,7 @@
 # Brooks Server
 
+![](https://i.imgur.com/iQqZYyQ.gif)
+
 ## Get started
 
 ### Install MySQL dependencies
