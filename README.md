@@ -49,7 +49,7 @@ To run the server permanently, use `screen` and `forever`. (I know there are eas
 ```
 npm install -g forever
 screen
-/usr/bin/forever /usr/bin/npm start --prefix /root/brooks-server
+/usr/bin/forever start /usr/bin/npm start --prefix /root/brooks-server
 ```
 
 ## Troubleshooting
